@@ -1,0 +1,32 @@
+/*create schema stor*/
+
+/*use stor*/
+
+/*create table custome (
+customer_id varchar(20) primary key ,
+customer_name varchar(20) not null,
+customer_tel bigint
+);*/
+
+/*create table product(
+product_id varchar(20) primary key,
+product_name varchar(20) not null,
+price bigint check (price > 0)
+);*/
+
+/*create table orders(
+customer_id varchar(20),
+product_id varchar(20),
+quantity bigint ,
+total_amount bigint,
+constraint fk_customer foreign key (customer_id) references custome (customer_id),
+constraint fk_product foreign key (product_id) references product (product_id),
+constraint pk_order primary key (customer_id , product_id)
+
+);*/
+
+/*alter table product
+add column category varchar(20);*/
+
+/*alter table orders
+add column order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ;*/
